@@ -26,8 +26,8 @@ transition: .4s;
 @media screen and (max-width: 922px) {
   .scrollup{
     right: 1.5rem;
-    paddi
-    
+    padding: 0rem;
+  }
     .scrollup__icon{
         font-size: 1.5rem;
     }

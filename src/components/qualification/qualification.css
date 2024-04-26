@@ -83,9 +83,7 @@
     transform: translate(6px, -7px);
 }
 
-@media screen and (max-width: 922px) {
- 
-}
+
 
 @media screen and (max-width: 768px) {
 .qualification__container{

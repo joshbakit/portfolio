@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './services.css'
+import TaskListProject from './TaskListProject';
 
 const Services = () => {
   const [toggleState, setToggleState] = useState(0);
@@ -19,7 +20,7 @@ const Services = () => {
           <div>
             <i className='bx bx-book-content services__icon'></i>
             <h3 className="services__title">
-              Task List
+              Task List Grocery Buddy
             </h3>
           </div>
 
@@ -31,42 +32,13 @@ const Services = () => {
           <div className={toggleState === 1 ? "services__modal active-modal" : "services__modal"}>
             <div className="services__modal-content">
               <i className="uil uil-times services__modal-close" onClick={() => toggleTab(0)}></i>
-              <h3 className="services__modal-title">Task List</h3>
-              <p className="services__modal-description">
+              <h3 className="services__modal-title taskList__title ">Grocery Buddy</h3>
+              <p className="services__modal-description taskList__description">
                 Designed and developed a dynamic task list application using React.js, demonstrating proficiency in modern frontend development.
               </p>
-              <ul className="services__modal-services grid">
-                <li className="services__modal-service">
-                  <i className='bx bx-badge-check' ></i>
-                  <p className="services__modal-info">
-                    Featuring task management functionalities such as creation, deletion, and editing.
-                  </p>
-                </li>
-                <li className="services__modal-service">
-                  <i className='bx bx-badge-check' ></i>
-                  <p className="services__modal-info">
-                    Implemented responsive design for optimal user experience
-                  </p>
-                </li>
-                <li className="services__modal-service">
-                  <i className='bx bx-badge-check' ></i>
-                  <p className="services__modal-info">
-                    Tested rigorously for stability and reliability
-                  </p>
-                </li>
-                <li className="services__modal-service">
-                  <i className='bx bx-badge-check' ></i>
-                  <p className="services__modal-info">
 
-                  </p>
-                </li>
-                <li className="services__modal-service">
-                  <i className='bx bx-badge-check' ></i>
-                  <p className="services__modal-info">
+              <TaskListProject />
 
-                  </p>
-                </li>
-              </ul>
             </div>
           </div>
         </div>
@@ -94,6 +66,20 @@ const Services = () => {
           </div>
 
           <a className="services__button" href='https://joshbakit.github.io/realTimeCharacterCounter/' target='_blank'>
+            View more
+            <i className="uil uil-arrow-right"></i>
+          </a>
+        </div>
+
+        <div className="services__content">
+          <div>
+            <i className='bx bx-book-content services__icon'></i>
+            <h3 className="services__title">
+              Responsive Soccer Website
+            </h3>
+          </div>
+
+          <a className="services__button" href='https://joshua-benas-football-soccer.netlify.app/#' target='_blank'>
             View more
             <i className="uil uil-arrow-right"></i>
           </a>
