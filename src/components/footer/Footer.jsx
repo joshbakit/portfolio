@@ -9,30 +9,30 @@ const Footer = () => {
 
                 <ul className="footer__list">
                     <li>
-                        <a href="#About" className="footer__link">About</a>
+                        <a href="#home" className="footer__link">About</a>
                     </li>
                     <li>
-                        <a href="#Projects" className="footer__link">Porjects</a>
+                        <a href="#services" className="footer__link">Projects</a>
                     </li>
                     <li>
-                        <a href="#Testimonials" className="footer__link">Testimonials</a>
+                        <a href="#qualification" className="footer__link">My Education</a>
                     </li>
                 </ul>
 
                 <div className="footer__social">
-                    <a href="www.instagram.com" className="home__social-icon footer__social-link" target='_blank'>
+                    <a href="https://www.facebook.com/" className="home__social-icon footer__social-link" target='_blank'>
                         <i className="uil uil-facebook-messenger"></i>
                     </a>
-                    <a href="www.messenger.com" className="home__social-icon footer__social-link" target='_blank'>
+                    <a href="https://www.linkedin.com/in/joshua-benas-7a68b8207/" className="home__social-icon footer__social-link" target='_blank'>
                         <i className="uil uil-linkedin"></i>
                     </a>
-                    <a href="www.github.com" className="home__social-icon footer__social-link" target='_blank'>
+                    <a href="https://github.com/joshbakit" className="home__social-icon footer__social-link" target='_blank'>
                         <i className="uil uil-github"></i>
                     </a>
-                    <a href="www.instagram.com" className="home__social-icon footer__social-link" target='_blank'>
+                    <a href="https://www.instagram.com/joshbakit" className="home__social-icon footer__social-link" target='_blank'>
                         <i className="uil uil-instagram"></i>
                     </a>
-                    <a href="www.youtube.com" className="home__social-icon footer__social-link" target='_blank'>
+                    <a href="https://www.youtube.com/channel/UCniB-dWjDKn71yG1muMuBbQ" className="home__social-icon footer__social-link" target='_blank'>
                         <i className="uil uil-youtube"></i>
                     </a>
                 </div>

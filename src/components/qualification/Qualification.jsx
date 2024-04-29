@@ -9,8 +9,8 @@ const Qualification = () => {
 
 
     return (
-        <section className="qualification section">
-            <h2 className="section__title">Qualification</h2>
+        <section className="qualification section" id='qualification'>
+            <h2 className="section__title">Education and Experience</h2>
             <span className="section__subtitle">Personal Journey</span>
 
             <div className="qualification__container container">
@@ -120,7 +120,7 @@ const Qualification = () => {
                                 <span className="qualification__subtitle">GampePlan Marketing Solution Inc. </span>
                                 <div className="qualification__calendar">
                                     <i className='bx bx-calendar'></i>
-                                    2021 - Present
+                                    2018 - 2021
                                 </div>
                             </div>
                         </div>
@@ -128,10 +128,10 @@ const Qualification = () => {
                         <div className="qualification__data">
                             <div>
                                 <h3 className="qualification__title">Freelance</h3>
-                                <span className="qualification__subtitle">spain - intitute</span>
+                                <span className="qualification__subtitle">FrontEnd</span>
                                 <div className="qualification__calendar">
                                     <i className='bx bx-calendar'></i>
-                                    2021 - Present
+                                    2021
                                 </div>
                             </div>
                             <div>
@@ -148,10 +148,10 @@ const Qualification = () => {
                             </div>
                             <div>
                                 <h3 className="qualification__title">Video Editor</h3>
-                                <span className="qualification__subtitle">spain - intitute</span>
+                                <span className="qualification__subtitle">Princess ACM Youtube Vlog</span>
                                 <div className="qualification__calendar">
                                     <i className='bx bx-calendar'></i>
-                                    2021 - Present
+                                    2021 - 2023
                                 </div>
                             </div>
                         </div>
@@ -159,10 +159,10 @@ const Qualification = () => {
                         <div className="qualification__data">
                             <div>
                                 <h3 className="qualification__title">Video Grapher</h3>
-                                <span className="qualification__subtitle">spain - intitute</span>
+                                <span className="qualification__subtitle">Princess ACM Youtube Vlog</span>
                                 <div className="qualification__calendar">
                                     <i className='bx bx-calendar'></i>
-                                    2021 - Present
+                                    2021 - 2023
                                 </div>
                             </div>
                             <div>

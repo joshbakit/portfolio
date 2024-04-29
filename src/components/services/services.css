@@ -151,23 +151,24 @@
     padding: 0;
    }
 
-   .seervices__modal{
+   .services__modal{
     width: 100%;
    }
+
+    .services__modal-title,
+    .services__modal-description{
+    display: none;
+ }
 }
 
 @media screen and (max-width: 350px) {
- .services__container{
-    grid-template-columns: max-content;
- }
+ 
 
  .services__content{
-    padding-right: 6rem;
+    padding: 2rem;
  }
 
- services__modal-title,
- services__modal-description{
-    display: none;
- }
-
+.services__modal-content{
+    padding: 3rem 2rem;
+   }
 }

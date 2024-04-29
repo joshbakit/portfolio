@@ -46,7 +46,7 @@ const Contact = () => {
                             <h3 className="contact__card-title">Email</h3>
                             <span className="contact__card-data">benasjoshuac</span>
 
-                            <a href="gmail.com" target="_blank" className="contact__card-data contact__button">
+                            <a href="mailto:benasjoshuac@gmail.com" target="_blank" className="contact__card-data contact__button">
                                 Write me
                                 <i className='bx bx-right-arrow-alt contact__button-icon' ></i>
                             </a>
@@ -54,13 +54,13 @@ const Contact = () => {
                         <div className="contact__card">
                             <i className='bx bxs-contact contact__card-icon'></i>
 
-                            <h3 className="contact__card-title">Whatsapp</h3>
-                            <span className="contact__card-data">999-888-777</span>
+                            <h3 className="contact__card-title">Text me</h3>
+                            <span className="contact__card-data">+63966-947-0915</span>
 
-                            <a href="whatsapp.com" target="_blank" className="contact__card-data contact__button">
+                            {/* <a href="whatsapp.com" target="_blank" className="contact__card-data contact__button">
                                 Write me
                                 <i className='bx bx-right-arrow-alt contact__button-icon' ></i>
-                            </a>
+                            </a> */}
                         </div>
                         <div className="contact__card">
                             <i className='bx bxl-messenger contact__card-icon' ></i>
@@ -68,7 +68,7 @@ const Contact = () => {
                             <h3 className="contact__card-title">Messenger</h3>
                             <span className="contact__card-data">user.fbmenow</span>
 
-                            <a href="messenger.com" target="_blank" className="contact__card-data contact__button">
+                            <a href="https://www.facebook.com/" target="_blank" className="contact__card-data contact__button">
                                 Write me
                                 <i className='bx bx-right-arrow-alt contact__button-icon' ></i>
                             </a>

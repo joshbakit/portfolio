@@ -101,6 +101,20 @@
 }
 }
 
+@media screen and (max-width: 576px){
+    .qualification__line,
+    .qualification__rounder{
+        display: none;
+    }
+    
+    
+    .qualification__content{
+       grid-template-columns: repeat(2);
+    }
+}
+
+
+
 @media screen and (max-width: 350px) {
  .qualification__data{
     gap: .5rem;

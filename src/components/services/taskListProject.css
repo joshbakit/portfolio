@@ -12,7 +12,7 @@
   flex-direction: column;
   align-items: center;
   margin:0;
-  width: 80%px;
+  width: 100%;
   padding: 3rem;
   background-color: #ffffff;
   border-radius: 8px;
@@ -121,14 +121,38 @@ button{
  }
 
 
-@media screen and (max-width: 576px) {
- 
+@media screen and (max-width: 600px) {
+.grocery-buddy{
+  padding: 1rem;
 }
 
-@media screen and (max-width: 350px) {
-    input,
+.input-container{
+  width: 100%;
+}
+
+}
+
+@media screen and (max-width: 450px){
+
+  
+  .input-section{
+    scale: 70%;
+  }
+
+}
+
+
+@media screen and (max-width: 400px) {
+
+.grocery-buddy h1{
+  font-size: 14px;
+  font-weight: bold;
+}
+
+input,
 button{
     font-size: 12px;
 }
+
 
 }
