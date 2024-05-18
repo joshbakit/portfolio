@@ -109,6 +109,12 @@ const Services = () => {
 
               <img src={figmaMovieTicket} className='figmaMovieTicket' alt="figmaMovieTicket" />
 
+              <a href="https://www.figma.com/design/QP8ICAytaUyiw7wYdBAx2M/interstellar-movieTicketBooking?node-id=0%3A1&t=tJ92oHIQi0Kr2Sbs-1">
+                <p>
+                  https://tinyurl.com/3aefnvtw
+                </p>
+              </a>
+
             </div>
           </div>
         </div>
