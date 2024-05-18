@@ -66,6 +66,7 @@
     background-color: var(--container-color);
     padding: 4rem;
     border-radius: 1.5rem;
+    text-align: center;
 }
 
 .services__modal-close{
@@ -121,6 +122,12 @@
     visibility: visible;
 }
 
+.figmaMovieTicket{
+    width: auto;
+    height: 300px;
+    margin: auto;
+}
+
 @media screen and (max-width: 922px){
   .services__container{
     grid-template-columns: repeat(3, 218px);
@@ -138,6 +145,11 @@
 
 .services__icon{
     font-size: 1.5rem;
+}
+
+.figmaMovieTicket{
+    width: 200px;
+    height: auto;
 }
  }
 

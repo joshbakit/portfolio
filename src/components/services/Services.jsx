@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './services.css'
 import TaskListProject from './TaskListProject';
+import figmaMovieTicket from '../../assets/figma-movieTicketReservation.png'
 
 const Services = () => {
   const [toggleState, setToggleState] = useState(0);
@@ -83,6 +84,33 @@ const Services = () => {
             View more
             <i className="uil uil-arrow-right"></i>
           </a>
+        </div>
+
+        <div className="services__content">
+          <div>
+            <i className='bx bx-book-content services__icon'></i>
+            <h3 className="services__title">
+              Task List Grocery Buddy
+            </h3>
+          </div>
+
+          <span className="services__button" onClick={() => toggleTab(1)}>
+            View more
+            <i className="uil uil-arrow-right"></i>
+          </span>
+
+          <div className={toggleState === 1 ? "services__modal active-modal" : "services__modal"}>
+            <div className="services__modal-content">
+              <i className="uil uil-times services__modal-close" onClick={() => toggleTab(0)}></i>
+              <h3 className="services__modal-title taskList__title ">Ticket Reservation Prototype</h3>
+              <p className="services__modal-description taskList__description">
+                Designed and developed Figma movie ticket reservation design.
+              </p>
+
+              <img src={figmaMovieTicket} className='figmaMovieTicket' alt="figmaMovieTicket" />
+
+            </div>
+          </div>
         </div>
 
         {/* <div className="services__content">
