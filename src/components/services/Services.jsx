@@ -90,16 +90,16 @@ const Services = () => {
           <div>
             <i className='bx bx-book-content services__icon'></i>
             <h3 className="services__title">
-              Task List Grocery Buddy
+              UI Figma - Movie Ticket Reservation App
             </h3>
           </div>
 
-          <span className="services__button" onClick={() => toggleTab(1)}>
+          <span className="services__button" onClick={() => toggleTab(2)}>
             View more
             <i className="uil uil-arrow-right"></i>
           </span>
 
-          <div className={toggleState === 1 ? "services__modal active-modal" : "services__modal"}>
+          <div className={toggleState === 2 ? "services__modal active-modal" : "services__modal"}>
             <div className="services__modal-content">
               <i className="uil uil-times services__modal-close" onClick={() => toggleTab(0)}></i>
               <h3 className="services__modal-title taskList__title ">Ticket Reservation Prototype</h3>
