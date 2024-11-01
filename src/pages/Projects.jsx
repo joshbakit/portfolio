@@ -9,6 +9,14 @@ const projects = [
     demoLink: "https://joshbakit-movie-clone.netlify.app/",
     image: '/assets/movie_clone.JPG'
   },
+  {
+    title: "Todo Task List",
+    description: "A simple todo task list I build to practice CRUD with reactjs, nodejs, express and mongodb",
+    techStack: "MongoDB, Express js, React js and Node js",
+    githubLink: "https://github.com/joshbakit/frontend-todotask",
+    demoLink: "https://frontend-todotask.vercel.app/",
+    image: '/assets/todo-list.png'
+  },
 ]
 
 const Projects = () => {
