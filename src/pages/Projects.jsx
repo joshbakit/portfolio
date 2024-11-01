@@ -7,7 +7,7 @@ const projects = [
     techStack: "Reactjs, API and Tailwind CSS ",
     githubLink: "https://github.com/joshbakit/movie_clone",
     demoLink: "https://joshbakit-movie-clone.netlify.app/",
-    image: '/public/assets/movie_clone.JPG'
+    image: '/assets/movie_clone.JPG'
   },
 ]
 
