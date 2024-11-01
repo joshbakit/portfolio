@@ -56,7 +56,7 @@ const Contact = () => {
               <FaFacebookMessenger size={30} className='mb-2' />
               <a href="m.me/joshbakit" className='underline text-xs'>m.me/joshbakit</a>
             </div>
-            <div className="contact_getintouch_info_messenger flex flex-col items-center">
+            <div className="contact_getintouch_info_resume flex flex-col items-center">
               <FaFileDownload size={30} className='mb-2' />
               <a href="/assets/JoshuaBenas-Resume.pdf" className='underline text-xs' download>Download Resume</a>
             </div>

@@ -16,13 +16,13 @@ const Footer = () => {
             Joshbakit
           </Link>
           <div className="social-media flex gap-5">
-            <a href="#">
+            <a href="https://github.com/joshbakit/" target="_blank ">
               <AiFillGithub size={20} className='hover:border-b' />
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/in/joshua-benas-7a68b8207/" target="_blank">
               <FaLinkedin size={20} className='hover:border-b' />
             </a>
-            <a href="#">
+            <a href="/contact">
               <BiLogoGmail size={20} className='hover:border-b' />
             </a>
           </div>
@@ -33,7 +33,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
+    </footer >
   )
 }
 
