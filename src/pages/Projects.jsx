@@ -18,7 +18,7 @@ const Projects = () => {
       <div className="projects_list grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
         {projects.map((p, index) => (
           <div className="card text-black w-92 h-full p-4 bg-[#fff] border-2 border-black rounded shadow-xl flex flex-col" key={index}>
-            <a href="">
+            <a href="https://joshbakit-movie-clone.netlify.app/" target='_blank'>
               <img src={p.image} alt="p.title" className='border border-black rounded-md' />
             </a>
             <div className="content flex flex-col gap-2">
