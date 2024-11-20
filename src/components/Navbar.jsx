@@ -1,6 +1,6 @@
 // src/components/Navbar.jsx
-import React, { useState, useRef, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { useState, useRef } from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,45 +8,41 @@ const Navbar = () => {
 
   const toggleMenu = () => {
     setIsOpen((prev) => !prev);
-
   };
 
-  const handleClickOutSide = (event) => {
-    if (menuRef.current && menuRef.current.contains(event.target)) {
-      setIsOpen(false);
-    }
-  }
-
-  useEffect(() => {
-    if (isOpen) {
-      document.addEventListener('mousedown', handleClickOutSide)
-    }
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutSide)
-    }
-  }, [isOpen]);
-
   return (
-    <nav className="bg-gray-800 text-white sticky top-0">
+    <nav className="bg-[#24303f] text-white sticky top-0">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
+        <div className="flex justify-between py-4 px-6">
           <div className="flex items-center">
-            <Link to="/" className="text-2xl font-bold">
+            <Link to="/" className="text-2xl font-bold hover:scale-105">
               Joshbakit
             </Link>
           </div>
           <div className="hidden md:flex space-x-4 items-center">
-            <Link to="/" className="hover:bg-gray-700 px-3 py-2 rounded">
+            <Link
+              to="/"
+              className="hover:bg-[#55E5A4] hover:text-[#000] px-3 py-2 rounded"
+            >
               Home
             </Link>
-            <Link to="/projects" className="hover:bg-gray-700 px-3 py-2 rounded">
+            <Link
+              to="/projects"
+              className="hover:bg-[#55E5A4] hover:text-[#000] px-3 py-2 rounded"
+            >
               Projects
             </Link>
 
-            <Link to="/about" className="hover:bg-gray-700 px-3 py-2 rounded">
+            <Link
+              to="/about"
+              className="hover:bg-[#55E5A4] hover:text-[#000] px-3 py-2 rounded"
+            >
               About
             </Link>
-            <Link to="/contact" className="hover:bg-gray-700 px-3 py-2 rounded">
+            <Link
+              to="/contact"
+              className="hover:bg-[#55E5A4] hover:text-[#000] px-3 py-2 rounded"
+            >
               Contact
             </Link>
           </div>
@@ -63,7 +59,9 @@ const Navbar = () => {
                   strokeLinecap="round"
                   strokeLinejoin="round"
                   strokeWidth="2"
-                  d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+                  d={
+                    isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"
+                  }
                 ></path>
               </svg>
             </button>
@@ -72,17 +70,24 @@ const Navbar = () => {
       </div>
 
       {/* {isOpen && ( */}
-      <div ref={menuRef} className={`md:hidden transition-all duration-300 ease-in-out ${isOpen ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'} overflow-hidden`}>
+      <div
+        ref={menuRef}
+        className={`md:hidden transition-all duration-300 ease-in-out ${
+          isOpen
+            ? "max-h-40 opacity-100 flex flex-col items-center"
+            : "max-h-0 opacity-0 flex flex-col items-center"
+        } overflow-hidden`}
+      >
         <Link
           to="/"
-          className="block px-4 py-2 hover:bg-gray-700"
+          className="block px-4 py-2 hover:bg-[#55E5A4] hover:text-[#000] rounded"
           onClick={() => setIsOpen(false)}
         >
           Home
         </Link>
         <Link
           to="/projects"
-          className="block px-4 py-2 hover:bg-gray-700"
+          className="block px-4 py-2 hover:bg-[#55E5A4] hover:text-[#000] rounded"
           onClick={() => setIsOpen(false)}
         >
           Projects
@@ -90,14 +95,14 @@ const Navbar = () => {
 
         <Link
           to="/about"
-          className="block px-4 py-2 hover:bg-gray-700"
+          className="block px-4 py-2 hover:bg-[#55E5A4] hover:text-[#000] rounded"
           onClick={() => setIsOpen(false)}
         >
           About
         </Link>
         <Link
           to="/contact"
-          className="block px-4 py-2 hover:bg-gray-700"
+          className="block px-4 py-2 hover:bg-[#55E5A4] hover:text-[#000] rounded"
           onClick={() => setIsOpen(false)}
         >
           Contact
