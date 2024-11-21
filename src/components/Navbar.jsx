@@ -1,6 +1,5 @@
 // src/components/Navbar.jsx
 import { useState, useRef } from "react";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,36 +14,39 @@ const Navbar = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between py-4 px-6">
           <div className="flex items-center">
-            <Link to="/" className="text-2xl font-bold hover:scale-105">
+            <a
+              href="/"
+              className="text-2xl font-bold hover:scale-105 cursor-pointer"
+            >
               Joshbakit
-            </Link>
+            </a>
           </div>
           <div className="hidden md:flex space-x-4 items-center">
-            <Link
-              to="/"
-              className="hover:bg-[#55E5A4] hover:text-[#000] px-3 py-2 rounded"
+            <a
+              href="/"
+              className="hover:bg-[#55E5A4] hover:text-[#000] px-3 py-2 rounded cursor-pointer"
             >
               Home
-            </Link>
-            <Link
-              to="/projects"
-              className="hover:bg-[#55E5A4] hover:text-[#000] px-3 py-2 rounded"
+            </a>
+            <a
+              href="#projects"
+              className="hover:bg-[#55E5A4] hover:text-[#000] px-3 py-2 rounded cursor-pointer"
             >
               Projects
-            </Link>
+            </a>
 
-            <Link
-              to="/about"
+            <a
+              href="#about"
               className="hover:bg-[#55E5A4] hover:text-[#000] px-3 py-2 rounded"
             >
               About
-            </Link>
-            <Link
-              to="/contact"
+            </a>
+            <a
+              href="#contact"
               className="hover:bg-[#55E5A4] hover:text-[#000] px-3 py-2 rounded"
             >
               Contact
-            </Link>
+            </a>
           </div>
           <div className="md:hidden flex items-center">
             <button onClick={toggleMenu} className="text-white">
@@ -78,35 +80,35 @@ const Navbar = () => {
             : "max-h-0 opacity-0 flex flex-col items-center"
         } overflow-hidden`}
       >
-        <Link
+        <a
           to="/"
           className="block px-4 py-2 hover:bg-[#55E5A4] hover:text-[#000] rounded"
           onClick={() => setIsOpen(false)}
         >
           Home
-        </Link>
-        <Link
+        </a>
+        <a
           to="/projects"
           className="block px-4 py-2 hover:bg-[#55E5A4] hover:text-[#000] rounded"
           onClick={() => setIsOpen(false)}
         >
           Projects
-        </Link>
+        </a>
 
-        <Link
+        <a
           to="/about"
           className="block px-4 py-2 hover:bg-[#55E5A4] hover:text-[#000] rounded"
           onClick={() => setIsOpen(false)}
         >
           About
-        </Link>
-        <Link
+        </a>
+        <a
           to="/contact"
           className="block px-4 py-2 hover:bg-[#55E5A4] hover:text-[#000] rounded"
           onClick={() => setIsOpen(false)}
         >
           Contact
-        </Link>
+        </a>
       </div>
       {/* )} */}
     </nav>
