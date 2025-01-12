@@ -6,6 +6,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+
   const menuOpen = () => setIsOpen(!isOpen);
 
   useEffect(() => {
@@ -25,6 +26,7 @@ const Navbar = () => {
       <a
         href="/"
         className="bg-gradient-to-r from-green-400 to-slate-500 bg-clip-text text-transparent opacity-80 text-3xl font-[800] transition-all duration-300 hover:opacity-100"
+        
       >
         JoshBakit
       </a>
@@ -95,18 +97,21 @@ const Navbar = () => {
             <a
               href="#tech"
               className="font-bold cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100"
+              onClick={menuOpen}
             >
               <li>TechStack</li>
             </a>
             <a
               href="#projects"
               className="font-bold cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100"
+              onClick={menuOpen}
             >
               <li>Projects</li>
             </a>
             <a
               href="#contact"
               className="font-bold cursor-pointer opacity-70 transition-all duration-300 hover:opacity-100"
+              onClick={menuOpen}
             >
               <li>Contact</li>
             </a>
