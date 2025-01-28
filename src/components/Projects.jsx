@@ -1,7 +1,7 @@
 import React from "react";
-import movieCloneImg from "/public/Screenshot_movieclone.png";
-import todoListImg from "/public//todo-list.jpg";
-import quizAppImg from "/public/Screenshot_quizapp.png";
+import movieCloneImg from "/Screenshot_movieClone.png";
+import todoListImg from "/todo-list.jpg";
+import quizAppImg from "/Screenshot_quizapp.png";
 import { motion } from "motion/react";
 import { IoIosLink } from "react-icons/io";
 import { FaGithub } from "react-icons/fa";
