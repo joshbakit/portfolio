@@ -1,6 +1,7 @@
 import React from "react";
 import movieCloneImg from "../../public/movie_clone.jpg";
 import todoListImg from "../../public//todo-list.jpg";
+import quizAppImg from "../../public/Screenshot_quizapp.png";
 import { motion } from "motion/react";
 import { IoIosLink } from "react-icons/io";
 import { FaGithub } from "react-icons/fa";
@@ -23,6 +24,15 @@ const projectsData = [
     technologies: ["React.js", "TailwindCss", "API", "Node.js", "MongoDb"],
     viewpage: "https://frontend-todotask.vercel.app/",
     sourceCode: "https://github.com/joshbakit/frontend-todotask",
+  },
+  {
+    image: quizAppImg,
+    title: "Quiz App",
+    description:
+      "Welcome to my Quiz App, where you can test your skills in different subjects. Select your category, answer questions within a 15-second timer, and receive immediate feedback. The app provides a summary of your performance at the end.",
+    technologies: ["HTML", "CSS", "Javascript"],
+    viewpage: "https://quizapp-eight-beta.vercel.app/",
+    sourceCode: "https://github.com/joshbakit/quizapp",
   },
 ];
 
