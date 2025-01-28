@@ -1,5 +1,5 @@
 import React from "react";
-import movieCloneImg from "../../public/movie_clone.jpg";
+import movieCloneImg from "../../public/Screenshot_movieclone.png";
 import todoListImg from "../../public//todo-list.jpg";
 import quizAppImg from "../../public/Screenshot_quizapp.png";
 import { motion } from "motion/react";
@@ -75,49 +75,40 @@ const Projects = () => {
         initial="hidden"
         whileInView="visible"
         transition={{ duration: 1, delay: 0.5 }}
-        className="flex w-full max-w-[1000px] flex-col gap-16 text-white"
+        className="flex flex-row flex-wrap w-full justify-center gap-4 text-white"
       >
         {projectsData.map((project, index) => (
           <ScrollReveal>
-            <div className="bg-slate-700 px-4 py-8 rounded-lg">
-              <li
-                key={index}
-                className="flex flex-col md:flex-row gap-16 items-center justify-center"
-              >
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="w-full cursor-pointer rounded-2xl transition-all duration-300 hover:scale-105 md:w-[300px]"
-                />
+            <div className="w-[350px] overflow-hidden aspect-video cursor-pointer rounded-xl relative group">
+              <div className="rounded-xl z-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in-out cursor-pointer absolute from-black/100 to-transparent bg-gradient-to-t inset-x-0 -bottom-4 pt-30 text-white flex items-end">
+                <div>
+                  <div className="p-4 space-y-3 text-xl group-hover:opacity-100 group-hover:translate-y-0 translate-y-4 pb-10 transform transition duration-300 ease-in-out">
+                    <div className="font-[800px] uppercase">
+                      {project.title}
+                    </div>
 
-                <div className="flex flex-col gap-4">
-                  <h1 className="text-3xl md:text-4xl uppercase">{project.title}</h1>
-                  <h3 className="">{project.description}</h3>
-                  <p className="flex flex-wrap space-x-6">
-                    {project.technologies.map((tech, techIndex) => (
-                      <span key={techIndex}>{tech}</span>
-                    ))}
-                  </p>
-                  <div className=" flex gap-4">
-                    <a
-                      href={project.viewpage}
-                      className="flex justify-center items-center gap-2 text-xs"
-                      target="_blank"
-                    >
-                      <IoIosLink size={20} className="text-blue-500" />
-                      View App
-                    </a>
-                    <a
-                      href={project.sourceCode}
-                      className="flex justify-center items-center gap-2 text-xs"
-                      target="_blank"
-                    >
-                      <FaGithub size={20} className="text-black" />
-                      View Code
-                    </a>
+                    <div className="flex gap-4 opacity-90 text-sm">
+                      <a href={project.viewpage}>
+                        <div className="flex gap-1 items-center">
+                          <IoIosLink />
+                          view page
+                        </div>
+                      </a>
+                      <a href={project.sourceCode}>
+                        <div className="flex gap-1 items-center">
+                          <FaGithub />
+                          view code
+                        </div>
+                      </a>
+                    </div>
                   </div>
                 </div>
-              </li>
+              </div>
+              <img
+                alt={project.title}
+                className="object-cover object-bottom w-full aspect-square group-hover:scale-105 hover:opacity-70 transition duration-300 ease-in-out"
+                src={project.image}
+              />
             </div>
           </ScrollReveal>
         ))}
